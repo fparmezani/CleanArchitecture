@@ -15,13 +15,11 @@ namespace CleanArchMVC.Domain.Enitties
             ValidateDomain(name);
         }
 
-
         public Category(int id, string name)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id value");
             ValidateDomain(name);
         }
-
 
         public void Update(string name)
         {
